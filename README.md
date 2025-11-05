@@ -134,6 +134,11 @@ ALLOWED_HOSTS = ['your-domain.com', 'www.your-domain.com']
 
 ---
 
+## 📜 License
+This project is distributed under the MIT License.
+
+---
+
 ## Made with ❤️ using Django
 
 A simple, clean foundation for your next web project.
