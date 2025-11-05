@@ -13,22 +13,16 @@ This repository provides a lightweight Django setup that includes:
 - Preconfigured settings for local development
 
 ### Project Structure
-djangoStarter/
-│
-├── manage.py                # Django management script
-├── djangoStarter/           # Core project settings and entry points
-├── tweet/                   # App containing models, views, forms, templates, and URLs
-└── media/                   # Uploaded files (e.g., media/photos/)
+<img width="444" height="429" alt="image" src="https://github.com/user-attachments/assets/2701d45f-13ef-46de-89a7-93eb75ddcb0a" />
 
 --- 
 
 ## ⚙️ Quick Summary
 
-Aspect	          Description
-Inputs	          Python 3.8+ and a virtual environment
-Outputs	          Running development server with a working Tweet app
-Error Modes	      Missing dependencies, migrations, or media folder permissions
-Success Criteria	python manage.py runserver serves the app locally
+- Inputs: Python 3.8+ and a virtual environment
+- Outputs: Running development server with a working Tweet app
+- Error Modes: Missing dependencies, migrations, or media folder permissions
+- Success Indicator: The site runs locally when you execute python manage.py runserver
 
 ---
 
@@ -84,9 +78,15 @@ pip freeze > requirements.txt
 
 ## 🧪 Common Tasks
 
-Task	                                 Command
-Run tests	                             python manage.py test
-Collect static files (for production)	 python manage.py collectstatic
+- Run Tests:
+```bash
+python manage.py test
+```
+
+- Collect Static Files (for production):
+```bash
+python manage.py collectstatic
+```
 
 ---
 
@@ -98,6 +98,8 @@ Collect static files (for production)	 python manage.py collectstatic
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
+
+---
 
 ## 🎨 Templates
 - Global templates: templates/
@@ -117,9 +119,7 @@ ALLOWED_HOSTS = ['your-domain.com', 'www.your-domain.com']
 ```
 
 2. Use a proper WSGI/ASGI server (e.g., Gunicorn or Uvicorn)
-
 3. Serve static and media files using Nginx, Apache, or a CDN
-
 4. Secure the app with environment variables and HTTPS
 
 --- 
@@ -129,7 +129,8 @@ ALLOWED_HOSTS = ['your-domain.com', 'www.your-domain.com']
 - Add a requirements.txt with pinned versions
 - Create a CONTRIBUTING.md for collaboration guidelines
 - Add a CI workflow (e.g., GitHub Actions) to run tests automatically
-- Include a LICENSE file if planning to publish the project
+- Include a LICENSE file for open-source distribution
+- Configure .env files for secret management
 
 ---
 
